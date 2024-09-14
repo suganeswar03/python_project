@@ -13,7 +13,7 @@ def get_running_services():
         if service.status()=='running':
             running_services.add(service.name())
     return running_services
-#new service alert
+#new service aler
 def send_warning_email(new_service):
     subject = 'NEW SERVICE ALERT!!! from SUGANESWAR SAVADAMUTHU'
     body = f'New services detected: {new_service}'
